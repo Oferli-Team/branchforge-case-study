@@ -9,7 +9,7 @@
 - Introduce BranchForge as an independent Rust developer tool created before its inclusion in the Oferli portfolio.
 - Show the redesigned status workspace using `assets/screenshots/01-status-workspace.png` or the running local demo.
 - State the verified product scope: native desktop, local browser, and console interfaces over real Git operations.
-- Avoid claims about user count, commercial adoption, performance gains, or production scale.
+- Avoid unsupported business metrics, performance gains, or production-scale claims.
 
 ## 0:35–1:25 — Architecture
 
@@ -64,7 +64,7 @@ Safe and useful areas to show:
 - `docs/process/package_verification_v1.0.1.md` and `docs/process/release_regression_matrix_sprint24.md`.
 - The public `v1.0.1` GitHub release page, showing package/checksum/signature artifact categories but not local signing configuration.
 
-Explain that the release includes Linux x86_64 packaging and verification artifacts. Do not claim broader platform validation without confirmation.
+Explain that the public release includes Linux x86_64 packaging and verification artifacts. The creator confirmed testing on macOS and Debian 12/13; do not generalize this to other systems.
 
 ## 5:10–5:40 — Final result
 

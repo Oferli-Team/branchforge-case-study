@@ -31,14 +31,15 @@ All captures were produced from a local, sanitized demonstration clone. The path
 - **Category:** Developer tools / Git client / desktop productivity
 - **Platforms:** Native desktop application, local browser interface, and console runner
 - **Project model:** Independent software product; no client is represented
+- **Creator:** Mikhail, now an Oferli technical team member
+- **Validated systems:** macOS and Debian 12/13
+- **Original source:** [galetaa/BranchForge](https://github.com/galetaa/BranchForge)
 - **Release evidence:** Tagged versions `v0.1.0-mvp` and `v1.0.1`, including published Linux artifacts for `v1.0.1`
-- **Contribution evidence:** Repository history attributes all 106 commits to one contributor; exact public role wording should be confirmed before publication
+- **Contribution:** Mikhail confirmed that he created and implemented the complete project; repository history independently attributes all 106 commits to one contributor
 
 ## The Problem
 
-Git supports far more than status, commit, and checkout, but advanced operations often require users to remember commands, understand repository state, and recover safely when a workflow fails. BranchForge appears designed to place everyday and advanced repository work behind a consistent interface while preserving visibility into the underlying operation and providing recovery paths for destructive changes.
-
-The original product brief and target-user research are not documented as business requirements. The problem statement above is an inference from the implemented feature set and architecture.
+Git supports far more than status, commit, and checkout, but advanced operations often require developers to remember commands, understand repository state, and recover safely when a workflow fails. Mikhail created BranchForge to make day-to-day Git work more convenient, placing everyday and advanced repository workflows behind a consistent interface while preserving visibility into the underlying operation and providing recovery paths for destructive changes.
 
 ## The Solution
 
@@ -112,9 +113,7 @@ No database, cache server, message broker, native mobile application, or externa
 
 ## Contribution
 
-Repository history shows a single contributor across all 106 commits. That evidence supports describing the work as independent end-to-end product engineering by an Oferli technical team member, covering the Rust workspace, Git operations, plugin runtime, safety/recovery mechanisms, application interfaces, test suites, and release tooling.
-
-**Needs confirmation before publication:** preferred role title, whether every technical area above was personally implemented, and whether the public source repository should be linked from the final portfolio.
+Mikhail is the creator and sole developer of BranchForge. He designed and implemented the Rust workspace, Git operations, plugin runtime, safety/recovery mechanisms, application interfaces, test suites, CI, packaging, and release tooling. Repository history supports this attribution with all 106 commits assigned to one contributor.
 
 ## Outcome
 
@@ -124,7 +123,7 @@ The repository delivers a functioning multi-interface Git workspace with real re
 
 ### Business outcome
 
-**Needs confirmation from the developer:** adoption, active users, commercial use, productivity impact, or any other measurable outcome. No business metrics are claimed.
+Not disclosed. No commercial or measurable business outcomes are claimed.
 
 ## Video Walkthrough
 

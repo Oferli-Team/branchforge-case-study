@@ -6,7 +6,9 @@
 - The portfolio repository contains documentation and sanitized screenshots only; it does not contain a copy of the BranchForge source.
 - Screenshots were captured from a temporary local clone with synthetic branch names, changes, and a demonstration commit.
 - A filename/content-pattern scan did not identify a literal credential value in the reviewed tracked source. It did identify credential-handling and configuration files that should remain off screen.
-- Claims about personal contribution use repository-history evidence and remain qualified pending developer confirmation.
+- Mikhail confirmed his role as creator and sole developer; repository history independently attributes all 106 commits to one contributor.
+- Mikhail confirmed testing on macOS and Debian 12/13.
+- Linking to the public `galetaa/BranchForge` source repository is approved.
 
 ## Safe to publish
 
@@ -46,9 +48,8 @@
 - **Provider integration details** — describe GitHub/GitLab-oriented support at a high level; verify any live account or API demonstration before publishing.
 - **Plugin registry contents** — verify registry URLs, package paths, signatures, and publisher identity before showing a non-synthetic registry.
 - **Future sandbox claims** — documentation mentions a future WASM capability model; do not describe it as implemented.
-- **Cross-platform support claims** — only the public Linux x86_64 release artifact was verified. Confirm other tested platforms before claiming support.
-- **Business metrics** — do not publish user counts, adoption, productivity gains, revenue, performance improvements, or production scale without evidence and permission.
-- **Personal contribution wording** — a single Git contributor supports strong authorship language but does not prove the absence of uncredited collaboration. Confirm the exact role.
+- **Cross-platform support claims** — macOS and Debian 12/13 were confirmed as tested. The public packaged artifact verified during review is Linux x86_64; do not claim validation on other systems.
+- **Business metrics** — commercial and measurable business outcomes are not disclosed and should remain outside the case study.
 - **License presentation** — Cargo metadata declares MIT, but no root `LICENSE` file was found. Confirm and add the intended license file to the source repository before making a strong public licensing claim.
 
 ## Visual assets checklist
@@ -67,12 +68,11 @@
 
 ## Final publication actions
 
-- [ ] Confirm the developer role and contribution wording.
-- [ ] Confirm whether the original public source repository may be linked.
-- [ ] Confirm whether the public GitHub handle may appear.
-- [ ] Confirm that the redesigned screenshots may be published by Oferli.
-- [ ] Confirm whether any real adoption or outcome information may be shared.
-- [ ] Confirm tested operating systems and plugin usage outside the sample/bundled set.
+- [x] Confirm the developer role as Creator and the complete personal implementation scope.
+- [x] Confirm that the original public source repository and GitHub handle may be linked.
+- [x] Confirm macOS and Debian 12/13 as tested systems.
+- [x] Keep commercial and measurable business outcomes undisclosed.
+- [ ] Confirm plugin usage outside the sample/bundled set.
 - [ ] Resolve the missing root license file in the source repository or soften license wording.
 - [ ] Review every screenshot at full resolution for names, emails, paths, URLs, and notifications.
 - [ ] Record and review the optional 3–7 minute walkthrough.
@@ -81,13 +81,5 @@
 
 ## Questions for Mikhail before publication
 
-1. What exact public role title should be used for BranchForge?
-2. Was the implementation entirely yours, or should anyone be credited for product, design, QA, or code contributions?
-3. What original user problem and target audience motivated the product?
-4. May the case study link to `galetaa/BranchForge` and show the public GitHub handle?
-5. May Oferli publish the redesigned screenshots and a code walkthrough?
-6. Did external users or testers use the product, and may non-sensitive adoption details be shared?
-7. Are there measurable outcomes that can be substantiated publicly?
-8. Which operating systems did you personally validate?
-9. Was external-plugin installation used beyond the included sample/template?
-10. Should the source repository receive a root MIT license file before wider promotion?
+1. Was external-plugin installation used beyond the included sample/template?
+2. Should the source repository receive a root MIT license file before wider promotion?

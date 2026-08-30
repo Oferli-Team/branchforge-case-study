@@ -23,14 +23,15 @@ This matrix records the repository evidence behind public claims. It is an edito
 | Release packaging, signing, checksums, and verification are included | `scripts/package-release.sh`, `scripts/sign-artifacts.sh`, verification scripts, release docs | Confirmed repository capability |
 | Public release tags include MVP and `v1.0.1` | Git tags and public GitHub release page | Confirmed |
 | `v1.0.1` includes Linux x86_64 release artifacts | Public release asset listing and package-verification docs | Confirmed; do not generalize to all platforms |
-| Repository history has one contributor across 106 commits | `git rev-list --count HEAD`, `git shortlog` | Confirmed history metadata; exact personal scope still needs confirmation |
-| Project is independent rather than client work | No client branding/requirements found; repository owned by the developer’s public account | Reasonable inference; confirm preferred wording |
+| Mikhail is the creator and sole developer | Direct developer confirmation; `git rev-list --count HEAD`; `git shortlog` | Confirmed |
+| Project is independent rather than client work | Direct developer confirmation and public source ownership | Confirmed |
+| The original goal was to make day-to-day Git work more convenient | Direct developer confirmation | Confirmed |
+| The project was tested on macOS and Debian 12/13 | Direct developer confirmation | Confirmed; public packaged release verified separately as Linux x86_64 |
 | No application database/cache/broker was found | Workspace manifests, crate structure, configuration inventory | Confirmed for reviewed repository |
 | OS credential storage and provider-oriented PR support exist | `app_host` credential/provider modules and action surfaces | Confirmed; do not show live credentials/accounts |
 | Cargo declares MIT | Root `Cargo.toml` | Confirmed metadata; a root license file was not found, so verify before public licensing claims |
-| Business adoption or measurable productivity results | No repository evidence | Needs confirmation; do not claim |
-| Original user research and product brief | Not found as requirements evidence | Needs confirmation |
+| Commercial or measurable business outcomes | Not disclosed | Do not claim |
 
 ## Claim-writing rule
 
-Use a claim as a fact only when the matrix marks it confirmed. Keep limitations attached to the claim. Treat motives, adoption, personal attribution beyond Git history, cross-platform validation, and business outcomes as inferences or confirmation items.
+Use a claim as a fact only when the matrix marks it confirmed. Keep limitations attached to the claim. Treat unverified motivations, plugin usage beyond the included examples, broader platform validation, and business outcomes as inferences or omissions.

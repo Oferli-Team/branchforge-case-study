@@ -8,7 +8,7 @@
 **Platforms:** Native desktop, local browser interface, and console runner  
 **Main technologies:** Rust 2024, eframe/egui, HTML/CSS, Git CLI, Serde, framed JSON RPC, OpenSSL, and GitHub Actions
 
-BranchForge is a Rust-based Git workspace that combines routine repository work, advanced branch operations, recovery controls, and plugin extensibility in one shared runtime. Native, browser, and console interfaces all operate on the same action, job, and state model, while a dedicated service owns real Git CLI execution. Repository history shows one contributor across all 106 commits; the exact public role title and personal scope should still be confirmed.
+BranchForge is a Rust-based Git workspace that combines routine repository work, advanced branch operations, recovery controls, and plugin extensibility in one shared runtime. Native, browser, and console interfaces all operate on the same action, job, and state model, while a dedicated service owns real Git CLI execution. Mikhail is the creator and sole developer; repository history independently attributes all 106 commits to one contributor.
 
 # Portfolio Case Study
 
@@ -18,24 +18,24 @@ BranchForge is a Rust-based Git workspace that combines routine repository work,
 - **Industry/domain:** Software development tooling and version-control productivity
 - **Platform:** Native desktop application, local web interface, console runner, plugin runtime, and release toolchain
 - **Client:** Not applicable; no client-commissioned relationship is represented
-- **Approximate developer role:** Independent product engineer / Rust engineer, inferred from single-contributor repository history
+- **Developer role:** Creator and sole developer
+- **Validated systems:** macOS and Debian 12/13
+- **Original source:** [galetaa/BranchForge](https://github.com/galetaa/BranchForge)
 - **Release state visible in repository:** Tagged MVP and `v1.0.1` releases; the public `v1.0.1` release includes a Linux x86_64 package and integrity files
 
 The codebase is organized as a Rust workspace with twelve core crates and seven bundled plugins. It includes product documentation, architecture boundaries, quality gates, release checklists, support guidance, packaging scripts, and extensive automated tests.
 
 ## The Problem
 
-Git is flexible, but that flexibility creates friction. Everyday actions are scattered across commands and flags, advanced operations require a precise understanding of repository state, and mistakes around reset, rebase, checkout, or reference manipulation can be costly. Teams also need confidence that a graphical client is performing real, understandable Git operations instead of hiding state behind an opaque workflow.
+Git is flexible, but that flexibility creates friction. Everyday actions are scattered across commands and flags, advanced operations require a precise understanding of repository state, and mistakes around reset, rebase, checkout, or reference manipulation can be costly. Developers also need confidence that a graphical client is performing real, understandable Git operations instead of hiding state behind an opaque workflow.
 
-BranchForge appears designed to make these workflows more accessible while keeping safety and recoverability visible. It presents repository state through consistent interfaces, routes changes through a controlled job system, marks higher-risk operations, and records enough information to diagnose or recover from failures.
-
-**Needs confirmation:** original product brief, primary target users, and any documented user research.
+Mikhail created BranchForge to make day-to-day Git work more convenient while keeping safety and recoverability visible. It presents repository state through consistent interfaces, routes changes through a controlled job system, marks higher-risk operations, and records enough information to diagnose or recover from failures.
 
 ## The Solution
 
 BranchForge implements a layered application around a shared host runtime:
 
-1. A user opens a local repository through the native desktop shell, browser workspace, or console runner.
+1. A developer opens a local repository through the native desktop shell, browser workspace, or console runner.
 2. The active interface dispatches an action rather than calling Git directly.
 3. The action engine resolves the action through the host and plugin catalog.
 4. The job system applies locking and operation policy, then delegates repository work to `git_service`.
@@ -240,7 +240,7 @@ The UI can query repository/runtime capabilities and disable unsupported control
 ### Add backup refs and an operation journal
 
 - **Decision:** Preserve reference context and record operations around selected higher-risk changes.
-- **Likely reason:** Give users a practical recovery path when a destructive Git workflow fails or produces an unintended result.
+- **Likely reason:** Provide a practical recovery path when a destructive Git workflow fails or produces an unintended result.
 - **Trade-off:** Recovery metadata and backup refs need lifecycle rules, clear UX, and testing so that safety mechanisms do not create confusing repository state.
 
 ### Use strict workspace-wide lints and dependency guards
@@ -272,14 +272,13 @@ The UI can query repository/runtime capabilities and disable unsupported control
 
 - Balancing advanced Git capabilities with an interface that remains approachable for routine work.
 - Performance and visual clarity on very large repositories or histories.
-- Cross-platform packaging expectations beyond the published Linux x86_64 artifact.
-- The amount of real-user feedback incorporated into the beta and `v1.0.1` release.
+- Packaging and release behavior on systems beyond the confirmed macOS and Debian 12/13 environments.
 - Whether plugin distribution was used outside the bundled and sample/template plugins.
 - Whether provider integrations were exercised against production GitHub or GitLab accounts.
 
 ## Developer Contribution
 
-Repository history attributes all 106 commits to a single contributor. On that evidence, the developer appears to have owned the product end to end, including:
+Mikhail confirmed that he is the creator and sole developer of BranchForge. His contribution covers the product end to end, including:
 
 - Rust workspace and crate architecture
 - Git service and repository operation modeling
@@ -289,18 +288,7 @@ Repository history attributes all 106 commits to a single contributor. On that e
 - Testing and regression suites
 - CI, packaging, signing, verification, and release documentation
 
-**Needs confirmation from developer: exact personal contribution and preferred public role wording.** A single Git author is strong evidence of repository authorship but does not prove that no uncredited design, testing, product, or code contributions occurred.
-
-Questions needed to finalize this section:
-
-1. Was the codebase implemented entirely by you, or were there uncredited design, QA, product, or code contributors?
-2. Which public role title is most accurate: creator, lead developer, product engineer, Rust engineer, or another title?
-3. Did you personally design the crate architecture and centralized Git-service boundary?
-4. Did you implement all three interfaces, or should any UI work be attributed separately?
-5. Did you design and implement the plugin runtime and release-signing workflow?
-6. Should the public case study link to the original `galetaa/BranchForge` repository and show the public GitHub handle?
-7. Were the published releases tested or used by people outside the development environment?
-8. Are there specific technical areas you prefer not to associate with your public portfolio?
+Repository history independently supports this attribution by assigning all 106 commits to one contributor. The public case study may link to the original `galetaa/BranchForge` repository.
 
 ## Outcome
 
@@ -310,7 +298,7 @@ The repository provides a functioning Git workspace with real repository operati
 
 ### Business outcome
 
-**Needs confirmation from developer.** The repository does not establish active-user counts, team adoption, paid usage, productivity gains, commercial outcomes, or production scale. No such metrics should be published without evidence and permission.
+Not disclosed. No commercial or measurable business outcomes are claimed.
 
 ## GitHub Portfolio Card
 
@@ -337,13 +325,5 @@ Do not add generic login, dashboard, cloud-infrastructure, database, or mobile v
 
 ## Questions for Mikhail before publication
 
-1. What public role title should be used for your contribution to BranchForge?
-2. Was BranchForge entirely your implementation, or should any product, design, testing, or code contributions be credited?
-3. Who was the primary intended user, and what original product problem were you trying to solve?
-4. May the final case study link to the public source repository and mention the public GitHub handle?
-5. May the redesigned screenshots and a code walkthrough be published under the Oferli organization?
-6. Were there external testers, users, or teams, and may any non-sensitive adoption information be shared?
-7. Is there a measurable outcome that can be supported publicly without inventing or exposing private information?
-8. Which operating systems were actually validated beyond the published Linux x86_64 package?
-9. Was plugin installation used outside the bundled/sample plugins, or should it be presented only as an implemented capability?
-10. Cargo metadata declares MIT, but no root license file was found. Should a public license file be added to the source repository before broader promotion?
+1. Was plugin installation used beyond the bundled/sample plugins, or should it remain described only as an implemented capability?
+2. Cargo metadata declares MIT, but no root license file was found. Should a public license file be added to the source repository before broader promotion?

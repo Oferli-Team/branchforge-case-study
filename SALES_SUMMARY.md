@@ -4,7 +4,7 @@ BranchForge is a Rust-based Git workspace built to make routine and advanced rep
 
 The product demonstrates end-to-end engineering around real Git CLI integration, a shared multi-interface runtime, process-isolated plugins, operation journaling, backup references, strict architectural boundaries, automated tests, CI, and signed release packaging. For a potential client, it is relevant evidence of the ability to turn a complex command-line domain into a structured desktop product without hiding operational risk or sacrificing extensibility.
 
-No adoption, revenue, productivity, or user-count claims are made. Those outcomes require confirmation from the developer.
+Commercial and measurable business outcomes are not disclosed.
 
 ## Portfolio Card
 
