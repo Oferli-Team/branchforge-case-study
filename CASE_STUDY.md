@@ -273,7 +273,6 @@ The UI can query repository/runtime capabilities and disable unsupported control
 - Balancing advanced Git capabilities with an interface that remains approachable for routine work.
 - Performance and visual clarity on very large repositories or histories.
 - Packaging and release behavior on systems beyond the confirmed macOS and Debian 12/13 environments.
-- Whether plugin distribution was used outside the bundled and sample/template plugins.
 - Whether provider integrations were exercised against production GitHub or GitLab accounts.
 
 ## Developer Contribution
@@ -325,5 +324,4 @@ Do not add generic login, dashboard, cloud-infrastructure, database, or mobile v
 
 ## Questions for Mikhail before publication
 
-1. Was plugin installation used beyond the bundled/sample plugins, or should it remain described only as an implemented capability?
-2. Cargo metadata declares MIT, but no root license file was found. Should a public license file be added to the source repository before broader promotion?
+No additional confirmation is currently required. External plugins are described only as an implemented technical capability, and the source repository now includes the MIT license declared by its Cargo metadata.

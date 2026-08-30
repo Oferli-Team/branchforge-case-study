@@ -45,7 +45,7 @@ Git supports far more than status, commit, and checkout, but advanced operations
 
 The repository implements a modular Rust workspace with a shared application host. Native, browser, and console interfaces dispatch actions through the same runtime; a dedicated Git service is the only layer permitted to execute the Git CLI. Jobs, state transitions, confirmation policies, plugin processes, and operation records are handled by separate crates with explicit dependency boundaries.
 
-BranchForge covers repository opening, status and staging, history and diff inspection, branches and tags, comparison, conflict and recovery workflows, and selected advanced operations such as rebase, worktrees, submodules, stash, and Git LFS. Bundled and external plugins use a versioned protocol and out-of-process transport, while release scripts package, sign, and verify artifacts.
+BranchForge covers repository opening, status and staging, history and diff inspection, branches and tags, comparison, conflict and recovery workflows, and selected advanced operations such as rebase, worktrees, submodules, stash, and Git LFS. Bundled and external-plugin support uses a versioned protocol and out-of-process transport, while release scripts package, sign, and verify artifacts. External plugins are presented as an implemented technical capability, not as a claim about third-party usage.
 
 ## Main Features
 

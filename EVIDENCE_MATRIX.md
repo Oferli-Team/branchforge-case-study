@@ -29,9 +29,9 @@ This matrix records the repository evidence behind public claims. It is an edito
 | The project was tested on macOS and Debian 12/13 | Direct developer confirmation | Confirmed; public packaged release verified separately as Linux x86_64 |
 | No application database/cache/broker was found | Workspace manifests, crate structure, configuration inventory | Confirmed for reviewed repository |
 | OS credential storage and provider-oriented PR support exist | `app_host` credential/provider modules and action surfaces | Confirmed; do not show live credentials/accounts |
-| Cargo declares MIT | Root `Cargo.toml` | Confirmed metadata; a root license file was not found, so verify before public licensing claims |
+| BranchForge is MIT licensed | Root `Cargo.toml` and root `LICENSE` | Confirmed |
 | Commercial or measurable business outcomes | Not disclosed | Do not claim |
 
 ## Claim-writing rule
 
-Use a claim as a fact only when the matrix marks it confirmed. Keep limitations attached to the claim. Treat unverified motivations, plugin usage beyond the included examples, broader platform validation, and business outcomes as inferences or omissions.
+Use a claim as a fact only when the matrix marks it confirmed. Keep limitations attached to the claim. Present external plugins only as an implemented technical capability, and treat broader platform validation and business outcomes as omissions unless separately verified.

@@ -50,7 +50,6 @@
 - **Future sandbox claims** — documentation mentions a future WASM capability model; do not describe it as implemented.
 - **Cross-platform support claims** — macOS and Debian 12/13 were confirmed as tested. The public packaged artifact verified during review is Linux x86_64; do not claim validation on other systems.
 - **Business metrics** — commercial and measurable business outcomes are not disclosed and should remain outside the case study.
-- **License presentation** — Cargo metadata declares MIT, but no root `LICENSE` file was found. Confirm and add the intended license file to the source repository before making a strong public licensing claim.
 
 ## Visual assets checklist
 
@@ -72,8 +71,8 @@
 - [x] Confirm that the original public source repository and GitHub handle may be linked.
 - [x] Confirm macOS and Debian 12/13 as tested systems.
 - [x] Keep commercial and measurable business outcomes undisclosed.
-- [ ] Confirm plugin usage outside the sample/bundled set.
-- [ ] Resolve the missing root license file in the source repository or soften license wording.
+- [x] Present external plugins only as an implemented technical capability.
+- [x] Add the root MIT license file declared by the source repository's Cargo metadata.
 - [ ] Review every screenshot at full resolution for names, emails, paths, URLs, and notifications.
 - [ ] Record and review the optional 3–7 minute walkthrough.
 - [ ] Replace the portfolio-card placeholder with the final Oferli case-study URL.
@@ -81,5 +80,4 @@
 
 ## Questions for Mikhail before publication
 
-1. Was external-plugin installation used beyond the included sample/template?
-2. Should the source repository receive a root MIT license file before wider promotion?
+No additional confirmation is currently required for the technical case-study claims. Commercial and measurable business outcomes remain intentionally omitted.
